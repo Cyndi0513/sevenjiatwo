@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ECSHOP管理中心</title>
+	<link rel="icon" href="../img/logo_t.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/ecshop.css">
+</head>
+<body>
+	<header>
+		<div class="ecshop_logo"><img src="../img/logo.png"></div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="">起始页</a></li>
+			<li><a href="">设置导航栏</a></li>
+			<li><a href="">商品列表</a></li>
+			<li><a href="">订单列表</a></li>
+			<li><a href="">用户评论</a></li>
+			<li><a href="">会员列表</a></li>
+			<li><a href="">商店设置</a></li>
+			<li><a href="">移动版</a></li>
+			<li><a href="">服务市场</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div class="main_menu">
+			<div class="menu_title">
+				<a href="###" showChange="1"><img src="../img/menu_minus.gif"></a>
+				<span>菜单</span>
+			</div>
+			<div class="menu_list">
+				<ol></ol>
+			</div>
+		</div>
+		<div class="main_content">
+			<div class="main_content_top"></div>
+			<div class="main_content_show">
+				<div class="main_show_index">七加二 ECSHOP管理中心</div>
+				<div class="select_floor" sellerId="0">
+					<div class="select_floor_contain">
+						<table cellpadding="3" cellspacing="1" class="select_floor_table"></table>
+						<table class="select_floor_pages"></table>
+					</div>
+					<div class="select_floor_update" sellerId="0" style="display: none;">
+						<div class="floor_nav">
+							<p>
+								<span>修改楼层信息</span>
+							</p>
+						</div>
+						<div class="floor_updated"></div>
+					</div>
+				</div>
+				
+				<div class="update_floor" sellerId="1">
+					<div class="floor_nav">
+						<p>
+							<span>修改楼层信息</span>
+						</p>
+					</div>
+					<div class="exchange_floor"></div>
+					<hr style="margin: 20px auto;border-color:rgba(233,255,179,0.4);width: 85%; ">
+					<div class="update_floorMessage"></div>
+					<hr style="margin: 20px auto;border-color:rgba(233,255,179,0.4);width: 85%; ">
+					<div class="selectFloorsBtn" SelBtnId="1"><input type="button" name="" value="查询楼层"></div>
+				</div>
+				<div class="delete_floor" sellerId="2">
+					<div class="delete_floor_contain">
+						<table cellpadding="3" cellspacing="1" class="delete_floor_table"></table>
+						<div class="selectFloorsBtn" SelBtnId="2"><input type="button" name="" value="查询楼层"></div>
+					</div>
+				</div>
+				<div class="huifu_floor" sellerId="3">
+					<div class="huifu_floor_contain">
+						<table cellpadding="3" cellspacing="1" class="huifu_floor_table"></table>
+						<div class="selectFloorsBtn" SelBtnId="3"><input type="button" name="" value="查询楼层"></div>
+					</div>
+				</div>
+				<div class="goods_list" sellerId="4">
+					<div class="goods_listShow">
+						<div class="goods_list_top">
+							<form>
+								<img src="../img/icon_search.gif">
+								<select class="allSelectClass">
+									<option value="0">所有分类</option>
+								</select>
+								<select class="allSelectBrands">
+									<option value="0">所有品牌</option>
+								</select>
+								关键字
+								<input type="text" name="keyword" size="15" value="">
+								<input type="button" name="searchBtn" value="搜索">
+							</form>
+						</div>
+						<div class="goods_list_contain">
+							<table cellpadding="3" cellspacing="1" class="goods_list_table"></table>
+							<table class="goods_list_pages"></table>
+						</div>
+					</div>
+					<div class="update_goods" style="display: none;">
+						<div class="update_goods_nav">
+							<p><span>商品信息</span></p>
+						</div>
+						<div class="update_goods_news">
+							<ul></ul>
+							<div class="update_goods_btns">
+								<input type="button" name="updateBtn" value="修改">
+								<input type="reset" name="reset" value="重置">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="add_goods" sellerId="5">
+					<div class="add_goods_nav">
+						<p><span>通用信息</span></p>
+					</div>
+					<div class="add_goods_news">
+						<ul></ul>
+						<div class="add_goods_btns">
+							<input type="button" name="addBtn" value="确定">
+							<input type="reset" name="reset" value="重置">
+						</div>
+					</div>
+				</div>
+				<div class="goods_Category" sellerId="6"></div>
+				<div class="goods_Brands" sellerId="7"></div>
+				<div class="del_goods" sellerId="8">
+					<div class="del_goods_contain">
+						<table cellpadding="3" cellspacing="1" class="del_goods_table"></table>
+						<table class="del_goods_pages"></table>
+					</div>
+				</div>
+				<div class="order_goods" sellerId="9">
+					<div class="order_goods_contain">
+						<table cellpadding="3" cellspacing="1" class="order_goods_table"></table>
+						<table class="order_goods_pages"></table>
+					</div>
+				</div>
+				<div class="selectOneOrder" sellerId="9">
+					<div class="selectOrderBack" style="width: 100px;padding: 3px 5px;background:#5c8918;color: #fff;text-align: center;">返回订单列表</div>
+					<div class="selectOneOrder">
+						<div>基本信息</div>
+						<table cellpadding="3" cellspacing="1" class="selectOneOrder_table1"></table>
+						<div>收货信息</div>
+						<table cellpadding="3" cellspacing="1" class="selectOneOrder_table2"></table>
+						<div>购买商品</div>
+						<table cellpadding="3" cellspacing="1" class="selectOneOrder_table3"></table>
+					</div>
+				</div>
+				<div class="orderGoodsSelect" sellerId="10">
+					<div class="orderSelectBox">
+						<div class="orderSelect_title">
+							<h2>订单查询</h2>
+						</div>
+						<div class="orderSelectSearch">
+							订单号：<input type="text" name="" placeholder="请输入订单号" class="orderSelect_oId">
+							收货人：<input type="text" name="" placeholder="收货人姓名" class="orderSelect_name">
+							<input type="button" name="" value="搜索" class="orderSelectSearchBtn">
+						</div>
+					</div>
+					<div class="orderGoodsSelect_contain">
+						<table cellpadding="3" cellspacing="1" class="orderGoodsSelect_table"></table>
+					</div>
+				</div>
+				<div class="orderGoodsUpdate" sellerId="11">
+					<p style='color: #dde7c8;font-size:30px;padding:20px 0;text-align:center;'>暂时无法更改订单</p>
+				</div>
+				<div class="userManage" sellerId="12">
+					<div class="userManage_contain">
+						<table cellpadding="3" cellspacing="1" class="userManage_table"></table>
+					</div>
+				</div>
+				<div class="addUser" sellerId="13"></div>
+				<div class="updateUser" sellerId="14"></div>
+				<div class="commentManage" sellerId="15">
+					<div class="commentManage_contain" style="margin-bottom: 10px;">
+						<table cellpadding="3" cellspacing="1" class="commentManage_table"></table>
+					</div>
+					<form>
+						<select>
+							<option value="0">全部显示</option>
+							<option value="1">批量显示</option>
+							<option value="2">批量隐藏</option>
+						</select>
+						<input type="button" class="commentBtn" value="确定">
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ecshop.js"></script>
+</html>
